@@ -1,0 +1,17 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.accordion {
+  text-align: center;
+}
+.yourMama {
+  width: 140px;
+  height: 40px;
+}
+.content {
+  text-emphasis: wrap;
+  margin: 10px;
+  background: gray;
+}
