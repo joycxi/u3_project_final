@@ -7,7 +7,7 @@ const Accordion = () => {
 
   return (
     <div className="accordion">
-      <button className="yourMama" onClick={toggleExpand}>
+      <button className="tarot" onClick={toggleExpand}>
         About <span>{expand ? "-" : "+"}</span>
       </button>
       {expand && (
@@ -18,7 +18,6 @@ const Accordion = () => {
             <br /> and should not be taken too seriously.
             <br /> i appreciate you taking the time to look around
           </p>
-          <h4> with warmth, joy</h4>
         </div>
       )}
     </div>

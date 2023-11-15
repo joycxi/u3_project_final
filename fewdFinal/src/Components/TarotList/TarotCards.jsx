@@ -9,28 +9,31 @@ const TarotCards = (props) => {
   const [buttonPopup, setButtonPopup] = useState(false);
   const [selectedCard, setSelectedCard] = useState("");
 
+  console.log("string")
 
 
   const handleCardClick = (card) => {
-    setSelectedCard(card);
-    setButtonPopup(true);
-    console.log(card)
-    console.log(selectedCard)
+    console.log("fun")
+    // alert(card.stringfy())
+    // setSelectedCard(card);
+    // setButtonPopup(true);
+    // console.log(selectedCard)
   };
 
   return (
     <div className="accordion">
-      <button className="yourMama" onClick={toggleExpand}>
+      <button className="tarot" onClick={toggleExpand}>
         Major Arcana <span>{expand ? "-" : "+"}</span>
       </button>
       {expand && (
-        <div className="tarotCards">
+        <div className="majorDiv">
           <ul>
+            {console.log("string")}
             {tarot.cards
               .filter((card) => card.arcana === "Major Arcana")
               .map((card) => (
-                <button
-                  onClick={() => handleCardClick(card)} // Removed unnecessary argument in the onClick function
+                <button className="tarotCards"
+                  onClick={() => alert("string")} // Removed unnecessary argument in the onClick function
                   key={card.number}
                 >
                   {card.name}
@@ -40,6 +43,7 @@ const TarotCards = (props) => {
           <Popup
           selectedCard={selectedCard}
           trigger={buttonPopup}>
+            {console.log("string")}
             {/* Your Popup content goes here */}
           </Popup>
         </div>

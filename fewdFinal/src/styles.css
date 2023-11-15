@@ -1,17 +1,47 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  background-color: #462953;
+}
+
+.wizard {
+  height: 150px;
+  width: auto;
+}
+.App {
+  margin: 250px;
+  padding: 10%;
+  background-color: rgb(96, 79, 112);
+
+  box-shadow: 0 0 50px #ae01ff;
+  border-radius: 15px;
+  border: solid 10px #ba537b;
 }
 
 .accordion {
   text-align: center;
 }
-.yourMama {
-  width: 140px;
-  height: 40px;
+.tarot { 
+  font-weight: bold;
+  border: solid 2px black;
+  box-shadow: 0 0 10px #35024d;
+  margin: 10%;
+  background-color: rgb(182, 122, 204);
 }
+
 .content {
   text-emphasis: wrap;
   margin: 10px;
-  background: gray;
+
+}
+.tarotCards {
+  font-weight: bold;
+  border: solid 2px black;
+  box-shadow: 0 0 10px #35024d;
+  margin: 2%;
+  background-color: rgb(182, 122, 204);
+}
+
+.majorDiv { 
+  border: none;
 }

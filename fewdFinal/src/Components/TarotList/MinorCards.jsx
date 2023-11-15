@@ -8,7 +8,7 @@ const MinorCards = (props) => {
 
   return (
     <div className="accordion">
-      <button className="yourMama" onClick={toggleExpand}>
+      <button className="tarot" onClick={toggleExpand}>
         Minor Arcana <span>{expand ? "-" : "+"}</span>
       </button>
       {expand && (
