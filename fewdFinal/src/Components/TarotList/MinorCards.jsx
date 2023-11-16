@@ -12,12 +12,20 @@ const MinorCards = (props) => {
         Minor Arcana <span>{expand ? "-" : "+"}</span>
       </button>
       {expand && (
-        <div className="tarotCards">
+        <div className="majorDiv">
           <ul>
             {tarot.cards
               .filter((card) => card.arcana === "Minor Arcana")
               .map((card) => (
-                <li key={card.number}>{card.name}</li>
+                <button className="tarotCards"
+                  onClick={() => alert("string")} // Removed unnecessary argument in the onClick function
+                  key={card.number}
+                >
+                  {card.name}
+                  <p>{card.arcana} 
+                  {card.suit}</p>
+                  
+                </button>
               ))}
           </ul>
         </div>

@@ -11,13 +11,15 @@ export default function App() {
   console.log("string")
   return (
     <div className="App">
+
       <Darktheme />
       <img className="wizard" src={wizard}/>
       <h1>Tarot Wiki</h1>
       <h2> Wikipedia of the Arcane</h2>
       <TarotCards />
       <MinorCards />
-      <Accordion />
+      <Accordion /> 
+      <p>ok</p>    
     </div>
   );
 }

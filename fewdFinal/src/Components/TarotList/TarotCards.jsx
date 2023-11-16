@@ -13,11 +13,11 @@ const TarotCards = (props) => {
 
 
   const handleCardClick = (card) => {
-    console.log("fun")
-    // alert(card.stringfy())
-    // setSelectedCard(card);
-    // setButtonPopup(true);
-    // console.log(selectedCard)
+
+    setSelectedCard(card);
+    setButtonPopup(true);
+    console.log(card)
+    console.log(selectedCard)
   };
 
   return (
@@ -33,10 +33,13 @@ const TarotCards = (props) => {
               .filter((card) => card.arcana === "Major Arcana")
               .map((card) => (
                 <button className="tarotCards"
-                  onClick={() => alert("string")} // Removed unnecessary argument in the onClick function
+                  onClick={() => handleCardClick(card)} 
                   key={card.number}
                 >
+                  <link rel="icon" type="image/x-icon" href="./yuguioh-icon.jpg/"></link>
                   {card.name}
+                  <p>{card.arcana} 
+                 </p> {card.suit}
                 </button>
               ))}
           </ul>
@@ -44,8 +47,8 @@ const TarotCards = (props) => {
           selectedCard={selectedCard}
           trigger={buttonPopup}>
             {console.log("string")}
-            {/* Your Popup content goes here */}
-          </Popup>
+           
+          </Popup> 
         </div>
       )}
     </div>
